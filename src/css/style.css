@@ -1,0 +1,99 @@
+html, body {
+	height: 100%;
+
+	font: 16px Arial, sans-serif;
+	
+	color: #2f2f2f;
+	background-color: #f6f6f6;
+
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+.card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
+	height: 100%;
+}
+.card .inner {
+	max-width: 1000px;
+	padding: 64px 47px;
+
+	background-color: #ffffff;
+	border: 1px solid #d7d7d7;
+}
+.card .inner > div {
+	display: inline-block;
+	width: 50%;
+
+	vertical-align: middle;
+}
+.card_img {
+	text-align: center;
+}
+.card_img img {
+	display: block;
+	width: 100%;
+	max-width: 376px;
+}
+.info {
+	margin-left: -5px;
+}
+.info .title {
+	margin-bottom: 31px;
+
+  font-size: 22.5px;
+  font-weight: bold;
+}
+.info .desc {
+	margin-bottom: 55px;
+
+  font-size: 15px;
+}
+.price .title {
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 23px;
+}
+.price .value {
+	margin-bottom: 56px;
+
+	font-size: 30px;
+}
+.btn_add-bask {
+	padding: 16px 39px;
+	font-size: 18px;
+	line-height: 1;
+
+	border: none;
+	background-color: #ec744a;
+	color: #ffffff;
+	cursor: pointer;
+
+	transition: background-color 0.3s;
+}
+.btn_add-bask:hover {
+	background-color: #ec744ae6;
+}
+
+@media (max-width: 500px) {
+	.card .inner > div {
+		width: 100%;
+	}
+	.card_img {
+		margin-bottom: 20px;
+	}
+	.info {
+		margin-left: 0;
+	}
+}
